@@ -347,7 +347,7 @@ if (pOptionalInitParams && pOptionalInitParams->useOpenGLDebugContext) glfwWindo
     glfwSetWindowIconifyCallback(window, glfw_window_iconify_callback);
 
 #ifdef IMGUI_USE_GLAD
-   if(!gladLoadGL()) {
+   if(!gladLoadGL(glfwGetProcAddress)) {
         fprintf(stderr,"Error initializing GLAD!\n");
         return false;
     }

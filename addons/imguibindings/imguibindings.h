@@ -28,7 +28,7 @@
 #       include <GL/glew.h>
 #   endif //__APPLE
 #elif IMGUI_USE_GLAD
-#   include <glad/glad.h>
+#   include <glad/gl.h>
 #elif IMGUI_USE_GL3W
 #   include <GL/gl3w.h>
 #else //IMGUI_USE_GLEW
@@ -90,10 +90,6 @@ typedef char GLchar;    // Is this needed for all GL bindings ?
 #       define GLFW_EXPOSE_NATIVE_WGL
 #       include <GLFW/glfw3native.h>    // glfwGetWin32Window(...) used by ImImpl_ImeSetInputScreenPosFn(...)
 #   endif //_WIN32
-#   define IMIMPL_SHADER_GLES
-#	include <GLES2/gl2.h>
-#	include <GLES2/gl2ext.h>
-#	include <EGL/egl.h>
 #ifdef _WIN32
 typedef char GLchar;    // Is this needed for all GL bindings ?
 #endif // _WIN32
