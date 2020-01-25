@@ -92,3 +92,8 @@ namespace ImGui
     void MyFunction(const char* name, const MyMatrix44& v);
 }
 */
+
+#define YES_IMGUISQLITE3
+#define YES_IMGUISDF
+#define YES_IMGUISTRINGIFIER
+#define YES_IMGUITINYFILEDIALOGS
