@@ -80,7 +80,7 @@ typedef char GLchar;    // Is this needed for all GL bindings ?
 //-------------------------------------------------------------------------------
 #elif IMGUI_USE_GLFW_BINDING
 //-------------------------------------------------------------------------------
-//# define GLFW_STATIC   //// Optional, depending on which glfw lib you want to use
+# define GLFW_STATIC   //// Optional, depending on which glfw lib you want to use
 #   include <GLFW/glfw3.h>
 #   if (GLFW_VERSION_MAJOR<3)
 #       error GLFW_VERSION_MAJOR < 3 is not supported
@@ -90,6 +90,10 @@ typedef char GLchar;    // Is this needed for all GL bindings ?
 #       define GLFW_EXPOSE_NATIVE_WGL
 #       include <GLFW/glfw3native.h>    // glfwGetWin32Window(...) used by ImImpl_ImeSetInputScreenPosFn(...)
 #   endif //_WIN32
+#   define IMIMPL_SHADER_GLES
+#	include <GLES2/gl2.h>
+#	include <GLES2/gl2ext.h>
+#	include <EGL/egl.h>
 #ifdef _WIN32
 typedef char GLchar;    // Is this needed for all GL bindings ?
 #endif // _WIN32
