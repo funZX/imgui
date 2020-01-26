@@ -407,7 +407,7 @@ static bool InitBinding(const ImImpl_InitParams* pOptionalInitParams=NULL,int ar
     //int screenWidth = glutGet(GLUT_SCREEN_WIDTH);
     //glutInitWindowPosition(5 * screenWidth/ 12, 0);
     glutInit(&argc, argv);
-    if (!glutCreateWindow((pOptionalInitParams && pOptionalInitParams->gWindowTitle[0]!='\0') ? (const char*) &pOptionalInitParams->gWindowTitle[0] : "ImGui Glut OpenGL example"))
+    if (!glutCreateWindow((pOptionalInitParams && pOptionalInitParams->gWindowTitle[0]!='\0') ? (const char*) &pOptionalInitParams->gWindowTitle[0] : "jansq2gui"))
     {
         fprintf(stderr, "Could not call glutCreateWindow(...) successfully.\n");
         return false;

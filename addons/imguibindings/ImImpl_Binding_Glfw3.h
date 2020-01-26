@@ -328,7 +328,7 @@ if (pOptionalInitParams && pOptionalInitParams->useOpenGLDebugContext) glfwWindo
 */
 
     if (pOptionalInitParams && pOptionalInitParams->gWindowTitle[0]!='\0')  window = glfwCreateWindow(pOptionalInitParams ? pOptionalInitParams->gWindowSize.x : 1270, pOptionalInitParams ? pOptionalInitParams->gWindowSize.y : 720,(const char*) &pOptionalInitParams->gWindowTitle[0], NULL, NULL);
-    else		window = glfwCreateWindow(pOptionalInitParams ? pOptionalInitParams->gWindowSize.x : 1270, pOptionalInitParams ? pOptionalInitParams->gWindowSize.y : 720, "ImGui Glfw3 OpenGL example", NULL, NULL);
+    else		window = glfwCreateWindow(pOptionalInitParams ? pOptionalInitParams->gWindowSize.x : 1270, pOptionalInitParams ? pOptionalInitParams->gWindowSize.y : 720, "jansq2gui", NULL, NULL);
     if (!window)    {
         fprintf(stderr, "Could not call glfwCreateWindow(...) successfully.\n");
         return false;

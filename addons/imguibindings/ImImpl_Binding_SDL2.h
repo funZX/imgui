@@ -165,7 +165,7 @@ I think failing in SDL_Init() when a requested subsystem doesn't work properly i
     //SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS,);
     //SDL_GL_SetAttribute(SDL_GL_FRAMEBUFFER_SRGB_CAPABLE,1);
 
-    window = SDL_CreateWindow((pOptionalInitParams && pOptionalInitParams->gWindowTitle[0]!='\0') ? (const char*) &pOptionalInitParams->gWindowTitle[0] : "ImGui SDL2 OpenGL example",
+    window = SDL_CreateWindow((pOptionalInitParams && pOptionalInitParams->gWindowTitle[0]!='\0') ? (const char*) &pOptionalInitParams->gWindowTitle[0] : "jansq2gui",
                           SDL_WINDOWPOS_CENTERED,
                           SDL_WINDOWPOS_CENTERED,
                           pOptionalInitParams ? pOptionalInitParams->gWindowSize.x : 1270,
