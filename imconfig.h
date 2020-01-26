@@ -94,5 +94,4 @@ namespace ImGui
 */
 
 #define YES_IMGUISQLITE3
-#define YES_IMGUISDF
 #define YES_IMGUISTRINGIFIER
