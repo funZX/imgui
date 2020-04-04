@@ -93,4 +93,4 @@ namespace ImGui
 }
 */
 
-#define YES_IMGUISTRINGIFIER
+//#define YES_IMGUISTRINGIFIER
