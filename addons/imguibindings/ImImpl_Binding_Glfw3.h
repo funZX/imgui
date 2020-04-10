@@ -283,6 +283,7 @@ static bool InitBinding(const ImImpl_InitParams* pOptionalInitParams=NULL,int ar
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 #   endif //MIMPL_SHADER_GL3
     glfwWindowHint(GLFW_CLIENT_API, GLFW_OPENGL_ES_API);
+    glfwWindowHint(GLFW_CONTEXT_CREATION_API, GLFW_EGL_CONTEXT_API);
 #endif // IMIMPL_SHADER_GLES
 #endif //IMIMPL_SHADER_NONE
 //--------------------------------------------------------------------------
