@@ -12,10 +12,6 @@
 //    misrepresented as being the original software.
 // 3. This notice may not be removed or altered from any source distribution.
 
-#ifdef _WIN32
-#	include <windows.h>
-#endif //_WIN32
-
 //- Common Code For All Addons needed just to ease inclusion as separate files in user code ----------------------
 #include <imgui.h>
 #undef IMGUI_DEFINE_MATH_OPERATORS
